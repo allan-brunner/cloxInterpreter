@@ -1,8 +1,8 @@
-var beverage = "cafe au lait";
-var breakfast = "beignets";
-{
-	var breakfast = "BREAKFAST!";
-	print breakfast;
+fun fib(n) {
+  if (n < 2) return n;
+  return fib(n - 2) + fib(n - 1);
 }
-breakfast = "beignets with " + beverage;
-print breakfast;
+
+var start = clock();
+print fib(35);
+print clock() - start;
